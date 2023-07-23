@@ -26,6 +26,59 @@ body {
 }
 
 
+/* --------  Main  -------- */
+#container {
+  background-color: #1F2937;
+  height: 430px;
+  width: 90%;
+  max-width: 400px;
+  margin: 80px auto 0 auto;
+  overflow: hidden;
+}
+
+.subcontainer {
+  margin: 20px auto 0 auto;
+  width: 90%;
+}
+
+.settings-container {
+  border-bottom: 1px solid #2F3E53;
+}
+
+/*** Titles ***/
+.title {
+  font-family: 'Karla', sans-serif;
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 800;
+  text-align: center;
+}
+
+.title span {
+  color: #4ADF86;
+}
+
+.subtitle {
+  margin-top: 5px;
+  color: #D5D4D8;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
