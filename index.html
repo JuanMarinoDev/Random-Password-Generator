@@ -51,14 +51,41 @@
 
 
         <div class="pass-settings">
-
-
-
           <label class="pass-settings_title">Password Settings</label>
+          <ul class="options">
 
+            <li class="option">
+              <input type="checkbox" id="lowercase" checked>
+              <label for="lowercase">Lowercase (a-z)</label>
+            </li>
 
+            <li class="option">
+              <input type="checkbox" id="uppercase">
+              <label for="uppercase">Uppercase (A-Z)</label>
+            </li>
 
+            <li class="option">
+              <input type="checkbox" id="numbers">
+              <label for="numbers">Numbers (0-9)</label>
+            </li>
+
+            <li class="option">
+              <input type="checkbox" id="symbols">
+              <label for="symbols">Symbols (!-$+&lt;)</label>
+            </li>
+
+            <li class="option">
+              <input type="checkbox" id="exc-duplicate">
+              <label for="exc-duplicate">Exclude Duplicate</label>
+            </li>
+
+            <li class="option">
+              <input type="checkbox" id="inc-spaces">
+              <label for="inc-spaces">Include Spaces</label>
+            </li>
+          </ul>
         </div>
+        <button>Generate password</button>
       </div>
 
 
