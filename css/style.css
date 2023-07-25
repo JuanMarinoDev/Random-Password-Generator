@@ -223,6 +223,74 @@ button:hover {
 
 
 
+/* --------  Password Input  -------- */
+.password-container {
+  position: relative;
+}
+
+ #password-input {
+  background-color: #273549;
+  color: #55F991;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 8px 0 8px 12px;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.material-symbols-rounded {
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  top: 25px;
+  color: #55F991;
+  font-weight: 300;
+}
+
+
+
+.pass-indicator {
+  position: relative;
+  height: 3px;
+  background-color: #D5D4D8;
+  margin-top: 12px;
+  border-radius: 25px;
+}
+
+
+
+
+.pass-indicator::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+
+
+
+
+
+.pass-indicator#weak::before {
+  width: 20%;
+  background-color: #e64a4a;
+}
+
+
+.pass-indicator#medium::before {
+  width: 50%;
+  background-color: #f1c80b;
+}
+
+
+.pass-indicator#strong::before {
+  width: 100%;
+  background-color: #4285F4;
+}
 
 
 
