@@ -93,12 +93,6 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
-
-
 /*** Password Settings ***/
 .pass-settings {
   margin-top: 5px;
@@ -120,13 +114,6 @@ body {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
 /* The first option for Password Settings can NOT be unselected */
 .options .option:first-child {
   pointer-events: none;
@@ -134,12 +121,6 @@ body {
 .options .option:first-child input{
   opacity: 0.7;
 }
-
-
-
-
-
-
 
 /*!CHECKBOX*/
 .option input[type="checkbox"] {
@@ -183,17 +164,6 @@ body {
   font-size: 0.9em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*** BUTTON ***/
 button {
   cursor: pointer;
@@ -208,20 +178,6 @@ button {
 button:hover {
   background-color: #12e49e;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --------  Password Input  -------- */
 .password-container {
@@ -248,8 +204,6 @@ button:hover {
   font-weight: 300;
 }
 
-
-
 .pass-indicator {
   position: relative;
   height: 3px;
@@ -257,9 +211,6 @@ button:hover {
   margin-top: 12px;
   border-radius: 25px;
 }
-
-
-
 
 .pass-indicator::before {
   position: absolute;
@@ -270,27 +221,82 @@ button:hover {
   transition: width 0.3s ease;
 }
 
-
-
-
-
-
 .pass-indicator#weak::before {
   width: 20%;
   background-color: #e64a4a;
 }
-
-
 .pass-indicator#medium::before {
   width: 50%;
   background-color: #f1c80b;
 }
-
-
 .pass-indicator#strong::before {
   width: 100%;
   background-color: #4285F4;
 }
+
+
+
+
+
+/* __________________________________________________
+// --------------    Media Queries    ---------------
+// -------------------------------------------------- */
+@media all and (min-width: 420px) {
+
+
+
+  
+  /* --------  Main  -------- */
+  .subcontainer {
+    margin-top: 30px;
+  }
+
+
+
+
+  /*** Titles ***/
+  .title {
+    text-align: left;
+  }
+  .subtitle {
+    text-align: left;
+  }
+
+
+
+  /*** Password Length ***/
+  .pass-length {
+    margin-top: 30px;
+  }
+
+
+
+  /*** Password Settings ***/
+  .pass-settings {
+    margin-top: 10px;
+  }
+
+
+
+  /*** BUTTON ***/
+  button {
+    margin-top: 20px;
+  }
+
+
+
+  /* --------  Password Input  -------- */
+  #password-input {
+    margin-top: 30px;
+  }
+  .material-symbols-rounded {
+    top: 35px;
+  }
+}
+
+
+
+
 
 
 
