@@ -79,17 +79,6 @@ const generatePassword = () => {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 const updatePassIndicator = () => {
 
 
@@ -110,6 +99,29 @@ const updatePassIndicator = () => {
 
 
 
+const updateSlider = () => {
+    // passing slider value as counter text
+    lengthSliderSpan.innerText = lengthSlider.value;
+    generatePassword();
+    updatePassIndicator();
+}
+
+updateSlider();
+
+
+
+
+
+
+const copyPassword = () => {
+    navigator.clipboard.writeText(passwordInput.value); // copying random password
+    copyIcon.innerText = "check"; // changing copy icon to check
+    setTimeout(() => { // after 2000ms, changing tick icon back to copy
+        copyIcon.innerText = "copy_all";
+    }, 2000);
+}
+
+
 
 
 
@@ -118,10 +130,6 @@ const updatePassIndicator = () => {
 
 
 /* --------  Event Listeners  -------- */
+copyIcon.addEventListener("click", copyPassword);
+lengthSlider.addEventListener("input", updateSlider);
 generateBtn.addEventListener("click", generatePassword);
-
-
-
-
-
-
