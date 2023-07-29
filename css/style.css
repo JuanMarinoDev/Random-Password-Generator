@@ -329,33 +329,7 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media all and (min-width: 768px) {
-
-
-
-
-
-
-
-
   /* --------  Main  -------- */
   #container {
     height: 650px;
@@ -392,12 +366,6 @@ button:hover {
     margin-bottom: 20px;
   }
 
-
-
-
-
-
-
   /*!CHECKBOX*/
   .option input[type="checkbox"] {
     height: 14px;
@@ -409,18 +377,17 @@ button:hover {
   .option label {
     font-size: 0.98em;
   }
-
-
-
-
   /*** BUTTON ***/
   button {
     margin: 20px 0 30px 0;
     padding: 11px 19px 11px 17px;
   }
-
-
-
-
+  /* --------  Password Input  -------- */
+  .material-symbols-rounded {
+    top: 38px;
+  }
+  .pass-indicator {
+    height: 4px;
+  }
 
 }

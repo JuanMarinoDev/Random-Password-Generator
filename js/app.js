@@ -1,53 +1,23 @@
 /* _________________________________________________
 // -------------  Password Generator  --------------
 // ------------------------------------------------- */
-
-
-
-
-
 /* --------  GLOBAL  -------- */
 const lengthSlider = document.querySelector(".pass-range");
 const lengthSliderSpan = document.querySelector(".pass-length_details span");
-
 const options = document.querySelectorAll(".option input");
-
-
 const passwordInput = document.querySelector("#password-input");
 const passIndicator = document.querySelector(".pass-indicator");
-
-
 const generateBtn = document.querySelector("button");
-
 const copyIcon = document.querySelector(".material-symbols-rounded");
-
-
-
-
-
-
-
 
 
 /* Characters */
 let characters = {
-
     lowercase: "abcdefghijklmnopqrstuvwxyz",
-
     uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-
     numbers: "0123456789",
-
     symbols: "^!$%&|[](){}:;.,*+-#@<>~"
-
 }
-
-
-
-
-
-
-
 
 const generatePassword = () => {
     let staticPassword = "";
@@ -80,12 +50,8 @@ const generatePassword = () => {
 
 
 const updatePassIndicator = () => {
-
-
     // if lengthSlider value is less than 8 then pass "weak" as passIndicator id else if
     // lengthSlider value is less than 16 then pass "medium" as id else pass "strong" as id
-
-
     if (lengthSlider.value <= 8) {
         passIndicator.id = "weak";
     } else if (lengthSlider.value <= 16) {
@@ -96,21 +62,13 @@ const updatePassIndicator = () => {
 }
 
 
-
-
-
 const updateSlider = () => {
     // passing slider value as counter text
     lengthSliderSpan.innerText = lengthSlider.value;
     generatePassword();
     updatePassIndicator();
 }
-
 updateSlider();
-
-
-
-
 
 
 const copyPassword = () => {
@@ -120,15 +78,6 @@ const copyPassword = () => {
         copyIcon.innerText = "copy_all";
     }, 2000);
 }
-
-
-
-
-
-
-
-
-
 /* --------  Event Listeners  -------- */
 copyIcon.addEventListener("click", copyPassword);
 lengthSlider.addEventListener("input", updateSlider);
