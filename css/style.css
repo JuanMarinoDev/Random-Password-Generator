@@ -276,18 +276,6 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media all and (min-width: 555px) {
   /* --------  Main  -------- */
   #container {
@@ -309,9 +297,6 @@ button:hover {
     font-size: 1em;
   }
 
-
-
-
   /*** Password Settings ***/
   /*!CHECKBOX*/
   .option input[type="checkbox"] {
@@ -325,16 +310,11 @@ button:hover {
     font-size: 0.95em;
   }
 
-
-
   /*** BUTTON ***/
   button {
     padding: 10px 14px 10px 14px;
     margin: 25px 0 25px 0;
   }
-
-
-
 
   /* --------  Password Input  -------- */
   #password-input {
@@ -345,9 +325,6 @@ button:hover {
     right: 5px;
     top: 37px;
   }
-
-
-
 }
 
 
@@ -356,3 +333,94 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px) {
+
+
+
+
+
+
+
+
+  /* --------  Main  -------- */
+  #container {
+    height: 650px;
+    width: 80%;
+    max-width: 850px;
+  }
+  .subcontainer {
+    margin: 60px auto 0 auto;
+    width: 80%;
+  }
+  /*** Titles ***/
+  .title {
+    font-size: 2.2em;
+  }
+  .subtitle {
+    margin-top: 10px;
+    font-size: 1.125em;
+  }
+  /*** Password Length ***/
+  .pass-length_title,
+  .pass-settings_title,
+  .pass-length_details span {
+    font-size: 1.06em;
+  }
+  .pass-range {
+    height: 5px;
+  }
+  /*** Password Settings ***/
+  .options {
+    margin-top: 20px;
+    width: 80%;
+  }
+  .option {
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+  /*!CHECKBOX*/
+  .option input[type="checkbox"] {
+    height: 14px;
+    width: 14px;
+  }
+  .option input[type="checkbox"]:after {
+    font-size: 12px;
+  }
+  .option label {
+    font-size: 0.98em;
+  }
+
+
+
+
+  /*** BUTTON ***/
+  button {
+    margin: 20px 0 30px 0;
+    padding: 11px 19px 11px 17px;
+  }
+
+
+
+
+
+}
