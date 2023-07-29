@@ -242,18 +242,10 @@ button:hover {
 // --------------    Media Queries    ---------------
 // -------------------------------------------------- */
 @media all and (min-width: 420px) {
-
-
-
-  
   /* --------  Main  -------- */
   .subcontainer {
     margin-top: 30px;
   }
-
-
-
-
   /*** Titles ***/
   .title {
     text-align: left;
@@ -261,30 +253,18 @@ button:hover {
   .subtitle {
     text-align: left;
   }
-
-
-
   /*** Password Length ***/
   .pass-length {
     margin-top: 30px;
   }
-
-
-
   /*** Password Settings ***/
   .pass-settings {
     margin-top: 10px;
   }
-
-
-
   /*** BUTTON ***/
   button {
     margin-top: 20px;
   }
-
-
-
   /* --------  Password Input  -------- */
   #password-input {
     margin-top: 30px;
@@ -299,6 +279,76 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 555px) {
+  /* --------  Main  -------- */
+  #container {
+    max-width: 500px;
+    margin-top: 100px;
+  }
+  /*** Titles ***/
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1.09em;
+  }
+
+  /*** Password Length ***/
+  .pass-length_title,
+  .pass-settings_title,
+  .pass-length_details span {
+    font-size: 1em;
+  }
+
+
+
+
+  /*** Password Settings ***/
+  /*!CHECKBOX*/
+  .option input[type="checkbox"] {
+    height: 13px;
+    width: 13px;
+  }
+  .option input[type="checkbox"]:after {
+    font-size: 11px;
+  }
+  .option label {
+    font-size: 0.95em;
+  }
+
+
+
+  /*** BUTTON ***/
+  button {
+    padding: 10px 14px 10px 14px;
+    margin: 25px 0 25px 0;
+  }
+
+
+
+
+  /* --------  Password Input  -------- */
+  #password-input {
+    padding: 10px 0 10px 14px;
+    font-size: 0.95em;
+  }
+  .material-symbols-rounded {
+    right: 5px;
+    top: 37px;
+  }
+
+
+
+}
 
 
 
