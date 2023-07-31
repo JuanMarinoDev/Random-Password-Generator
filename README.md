@@ -2,7 +2,7 @@
 
 ### **For a live preview of this project, visit [this link](https://newrandom-password-generator.netlify.app/).**
 
-This project is a Web Application built with HTML, CSS, and JavaScript.
+This project is a Web Application built with **HTML**, **CSS**, and **JavaScript**.
 
 ## Description
 
